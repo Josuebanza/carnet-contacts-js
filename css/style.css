@@ -37,12 +37,17 @@ header{
 }
 .right{
     border-left: 2px solid;
+    margin-left: 5px;
 }
 form {
+    visibility: hidden;
     margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.left{
+    margin-right: 10px;
 }
 .input,
 #date,
@@ -68,4 +73,13 @@ label{
 }*/
 img{
     height: 25px;
+}
+.item{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.list-contact-item{
+    display: flex;
+    flex-direction: column;
 }

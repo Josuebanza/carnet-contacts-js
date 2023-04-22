@@ -16,7 +16,8 @@ btnadd.addEventListener('click', () => {
 const btnSave = document.querySelector('.btn-submit');
 const message = document.querySelector('.message');
 const listContact = document.querySelector('.list-contact')
-const listContactItem = document.createElement('div.list-contact-item')
+const listContactItem = document.createElement('div')
+listContactItem.classList.add('list-contact-item')
 const genre = document.querySelector('#gender').value
 
 btnSave.addEventListener('click', (e) => {
@@ -25,21 +26,23 @@ btnSave.addEventListener('click', (e) => {
     btnadd.style.visibility = "visible"
     message.style.display = "none"
 
-    listContactItem.innerHTML += ` 
-            <div><img class="photo" src="media/js.png" alt="profil"></div>
-    <div class="contact-info">
-        <h3>
-            <span>${document.querySelector('#name').value}</span>
-            <span >${document.querySelector('#firstname').value} </span>
-        </h3>
-        <p>${document.querySelector('#contry').value}</p>
-        <p>${document.querySelector('#mail').value} </p>
-        <p>${document.querySelector('#gender').value}</p>
-    </div>
-    <div class="btn-item-conctact">
-        <i class="bxs-edit-alt bx"></i>
-        <i class="bxs-trash bx "></i>
-    </div>`
+    listContactItem.innerHTML += ` <div class="item">
+        
+            <div class="photo-profil"><img class="photo" src="media/js.png" alt="profil"></div>
+             <div class="contact-info">
+                 <h3>
+                     <span>${document.querySelector('#name').value}</span>
+                    <span >${document.querySelector('#firstname').value} </span>
+                 </h3>
+                 <p>${document.querySelector('#contry').value}</p>
+                 <p>${document.querySelector('#mail').value} </p>
+                 <p>${document.querySelector('#gender').value}</p>
+             </div>
+             <div class="btn-item-conctact">
+                <i class="bxs-edit-alt bx"></i>
+                <i class="bxs-trash bx "></i>
+             </div></div>
+             `
     listContact.append(listContactItem)
 })
 
