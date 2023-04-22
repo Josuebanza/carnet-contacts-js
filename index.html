@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Mes contacts</h1>
+        <input class="bouton btnadd" type="button" value="Ajouter">
+    </header>
+    <main class="container">
+        <section class="left">
+           
+            <div class="list-contact">
+                <p class="message">La list est vide</p>
+
+             <!--<div class="list-contact-item">-->   
+                    <!-- ` <div><img class="photo" src="media/js.png" alt="profil"></div>
+                    <div class="contact-info">
+                        <h3><span id="firstname"></span>
+                            <span id="name"></span>
+                            <span id="lastname"></span>
+                        </h3>
+                        <p id="nationality"></p>
+                        <p id="emailAddress"></p>
+                        <p id="gender-age"></p>
+                    </div>
+                    <div class="btn-item-conctact">
+                        <i class="bxs-edit-alt bx"></i>
+                        <i class="bxs-trash bx "></i>
+                    </div>`-->
+
+                <!-- </div> -->
+            </div>
+        </section>
+        <section class="right">
+            <h2>Ajouter un contact</h2>
+            <form class="formulaire-contact">
+                <div class="group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" class="input">
+                </div>
+                <div class="group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" class="input">
+                </div>
+                <div class="group">
+                    <label for="contry">Pays</label>
+                    <select id="contry" class="input">
+                        <option value="">Choisir</option>
+                        <option value="rdc">RDC</option>
+                        <option value="RSA">South Africa</option>
+                        <option value="USA">United States </option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="gender">Genre</label>
+                    <select id="gender" class="input">
+                        <option value="">Choisir</option>
+                        <option value="M">Mâle</option>
+                        <option value="F">Femelle</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" class="input">
+                </div>
+                <div class="group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel">
+                </div>
+                <div class="group date">
+                    <label for="date">Date de Naissance</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="group-btn-s">
+                    <button class="bouton btn-submit">Ajouter ce contact</button>
+                </div>
+                <div class="group-btn-c">
+                    <button class="bouton btn-cancel">Annuler</button>
+                </div>
+
+            </form>
+
+
+        </section>
+    </main>
+</body>
+<script src="js/scripts.js"></script>
+
+</html>

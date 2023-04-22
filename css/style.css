@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;  
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.container{
+    display: flex;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.message{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.bouton{
+    font-weight: 600;
+    cursor:pointer;
+    border-radius: 4px;
+    border: #009bFF solid 1px;
+    background-color: #009bFF;
+    height: 25px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+.right{
+    border-left: 2px solid;
+}
+form {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.input,
+#date,
+#tel{
+    width: 170px;
+    height: 30px;
+}
+.group,
+label{
+    display: block;
+    padding: 5px;
+}
+.date{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.group-btn-s,
+.group-btn-c{
+    padding: 30px;
+}
+/*.formulaire-contact{
+    visibility: hidden;
+}*/
+img{
+    height: 25px;
+}
